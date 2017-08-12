@@ -42,7 +42,7 @@ If the SIMPLE interpreter finds something it does not know how to process, an er
 ### Program Error
 
 ```Program Error! [The number of arguments is invalid! Expected: Path to SIMPLE code file]```
-You entered an invalid number of command line arguments. The maximum number is 2. See ‘Getting Started’ (pg. 4) for more information.
+You entered an invalid number of command line arguments. The maximum number is 2.
 
 ```Program Error! [You did not select a valid file! Exiting...]```
 You did not select a valid file with the file chooser.
