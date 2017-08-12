@@ -39,7 +39,7 @@ https://java.com/en/download/
 If the SIMPLE interpreter finds something it does not know how to process, an error will be shown to the user and the program will stop. There are 4 types of errors and multiple error messages that fit into these 4 categories:
 - `[Program Error]`    There was a general problem with the interpreter- `[Lex Error]`        There was a problem with the code Lexer- `[Parse Error]`      There was a problem with the code Parser- `[Runtime Error]`    There was a problem when running code
 
-### Program Error
+### Program Errors
 
 ```
 Program Error! [The number of arguments is invalid! Expected: Path to SIMPLE code file]
@@ -72,6 +72,54 @@ Program Error! [The file could not be read: <path>]
 ```
 
 The file given could not be read by Java for unknown reasons.
+
+### Lex Errors
+
+```
+Lex Error! [Unknown Character Found: <char> on line <line> at position <pos>]
+```
+You entered an unknown character in the source code.
+
+### Parse Errors
+
+```
+Parse Error! [Unexpected end of file!]
+```
+The Parser ran out of input when processing the AST.
+
+```Parse Error! [Unexpected token found! Expected <char> but found <char>!]
+```
+The parser found unexpected input when processing the AST.
+
+### Runtime Errors
+
+```
+Runtime Error! [A return call was not found in the main body of the function: <func>]
+```
+You created a function that does not return a value. Ensure there exists a ‘return’ statement in the main body of the function.```
+Runtime Error! [There was more then one function found called: <func>]
+```
+You created two or more functions with the same name. Each function must have a unique name.
+
+```Runtime Error! [A return call was found in the "main" function! This function cannot contain a return statement]
+```
+You have a ‘return’ statement in the main function, remove it to avoid this error.
+
+```Runtime Error! [The "main" function was given parameters! This function has to contain no parameters]
+```
+The main function must be defined with no parameters: `main(){}`
+
+```Runtime Error! [Attempted to call <func> but this function does not exist!]
+```
+You have not defined the function you attempted to call.
+
+```Runtime Error! [Could not read user input! Did you enter a number?]
+```
+You called the read function but did not enter a numeric value.
+
+```Runtime Error! [The function <func> expected <value> argument(s), but <value> were given!]
+```
+The arguments that the function expected did not match the number of arguments given when the function was called. You either called the function with too many arguments or too little.
 
 ## Repo
 
