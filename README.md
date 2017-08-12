@@ -34,6 +34,11 @@ https://java.com/en/download/
 ```java -jar simple.jar -v Path/To/Code/File
 ```
 
+## Errors
+
+If the SIMPLE interpreter finds something it does not know how to process, an error will be shown to the user and the program will stop. There are 4 types of errors and multiple error messages that fit into these 4 categories:
+- `[Program Error]`    There was a general problem with the interpreter- `[Lex Error]`        There was a problem with the code Lexer- `[Parse Error]`      There was a problem with the code Parser- `[Runtime Error]`    There was a problem when running code
+
 ## Repo
 
 - `/src/`	
