@@ -36,7 +36,7 @@ https://java.com/en/download/
 
 ## Repo
 
-- `/src/'	SIMPLE source
+- `/src/`	SIMPLE source
 - `/test/`	SIMPLE test code
 - `README.md`	This readme file
 - `SIMPLE.jar`	The SIMPLE Interpreter
