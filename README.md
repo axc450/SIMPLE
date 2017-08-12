@@ -36,7 +36,11 @@ https://java.com/en/download/
 
 ## Repo
 
-- `/src/`	SIMPLE source
-- `/test/`	SIMPLE test code
-- `README.md`	This readme file
-- `SIMPLE.jar`	The SIMPLE Interpreter
+- `/src/`	
+	SIMPLE source
+- `/test/`	
+	SIMPLE test code
+- `README.md`	
+	This readme file
+- `SIMPLE.jar`	
+	The SIMPLE Interpreter
