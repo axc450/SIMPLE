@@ -1,0 +1,37 @@
+bubblesort(a, b, c, d, e)
+{
+	temp = 0;
+	repeat(4)
+	{
+		if(a > b)
+		{
+			temp = b;
+			b = a;
+			a = temp;
+		}
+		if(b > c)
+		{
+			temp = c;
+			c = b;
+			b = temp;
+		}
+		if(c > d)
+		{
+			temp = d;
+			d = c;
+			c = temp;
+		}
+		if(d > e)
+		{
+			temp = e;
+			e = d;
+			d = temp;
+		}
+	}
+	print(a,b,c,d,e);
+	return 0;
+}
+main()
+{
+	bubblesort(read(), read(), read(), read(), read());
+}

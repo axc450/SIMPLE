@@ -1,0 +1,19 @@
+avg()
+{
+	numbers = 0;
+	current = 0;
+	input = read();
+	repeat(input > -1)
+	{
+		numbers = numbers + 1;
+		current = current + input;
+		print(current/numbers);
+		input = read();
+	}
+	return current;
+	
+}
+main()
+{
+	avg();
+}

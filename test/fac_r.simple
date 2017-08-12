@@ -1,0 +1,20 @@
+fac(x)
+{
+	rtn = 0;
+
+	if(x > 1)
+	{
+		rtn = x*fac(x-1);
+	}
+	else
+	{
+		rtn = 1;
+	}
+
+	return rtn;
+}
+
+main()
+{
+	print(fac(read()));
+}

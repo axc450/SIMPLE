@@ -1,0 +1,62 @@
+f(x)
+{
+	return (x*x)-8;
+}
+
+sign(x)
+{
+	sign = 1;
+
+	if(x < 0)
+	{
+		sign = 0;
+	}
+
+	return sign;
+}
+
+bisection(max)
+{
+	a = read();
+	b = read();
+	n = 1;
+
+	repeat (n < max+1)
+	{
+		print((a+b)/2);
+
+		if (f((a+b)/2) = 0)
+		{
+			n = max+1;
+		}
+		else
+		{
+			
+			if (((b-a)/2)<0.1)
+			{
+				n = max+1;
+			}
+			else
+			{
+				n = (n+1);
+				if ( sign(f((a+b)/2)) = sign(f(a)) )
+				{
+					a = (a+b)/2;
+				}
+				else
+				{
+					b = (a+b)/2;
+				}	
+			}
+		}
+	} 
+	
+	return (a+b)/2;
+	
+	
+}
+
+main()
+{
+	bisection(read()-1);
+}

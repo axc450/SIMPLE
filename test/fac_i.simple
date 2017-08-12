@@ -1,0 +1,17 @@
+fac(x)
+{
+	rtn = x;
+
+	repeat(x>1)
+	{
+		x = x-1;
+		rtn = rtn * x;
+	}
+
+	return rtn;
+}
+
+main()
+{
+	print(fac(read()));
+}
