@@ -33,3 +33,10 @@ https://java.com/en/download/
 
 ```java -jar simple.jar -v Path/To/Code/File
 ```
+
+## Repo
+
+- `/src/'	SIMPLE source
+- `/test/`	SIMPLE test code
+- `README.md`	This readme file
+- `SIMPLE.jar`	The SIMPLE Interpreter
