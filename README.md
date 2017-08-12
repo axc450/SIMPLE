@@ -23,8 +23,8 @@ https://java.com/en/download/
 `
 You can also specify the SIMPLE code file to run straight from the command line.
 
-`java -jar simple.jar Path/To/Code/File
-`
+```java -jar simple.jar Path/To/Code/File
+```
 Verbose mode can be turned on by specifying the command line argument ‘-v’ as shown below. 
 
 `java -jar simple.jar -v
@@ -41,13 +41,19 @@ If the SIMPLE interpreter finds something it does not know how to process, an er
 
 ### Program Error
 
-`Program Error! [The number of arguments is invalid! Expected: Path to SIMPLE code file]`You entered an invalid number of command line arguments. The maximum number is 2. See ‘Getting Started’ (pg. 4) for more information.
-`Program Error! [You did not select a valid file! Exiting...]`You did not select a valid file with the file chooser.
-`Program Error! [An argument was not recognised! Expected: Path to SIMPLE code file]`You typed an invalid argument. The only arguments that are valid are the path to the SIMPLE code file and ‘-v’.
+`Program Error! [The number of arguments is invalid! Expected: Path to SIMPLE code file]`
+You entered an invalid number of command line arguments. The maximum number is 2. See ‘Getting Started’ (pg. 4) for more information.
+`Program Error! [You did not select a valid file! Exiting...]`
+You did not select a valid file with the file chooser.
+`Program Error! [An argument was not recognised! Expected: Path to SIMPLE code file]`
+You typed an invalid argument. The only arguments that are valid are the path to the SIMPLE code file and ‘-v’.
 
-`Program Error! [The path given was not found or was not a file: <path>]`The file path you input either wasn't found or wasn't a file (e.g. a folder).
-`Program Error! [The path given does not seem to be a SIMPLE code file. Attempting to process anyway...]`The file given did not have the file extension ‘.simple’.
+`Program Error! [The path given was not found or was not a file: <path>]`
+The file path you input either wasn't found or wasn't a file (e.g. a folder).
+`Program Error! [The path given does not seem to be a SIMPLE code file. Attempting to process anyway...]`
+The file given did not have the file extension ‘.simple’.
 `Program Error! [The file could not be read: <path>]`
+
 The file given could not be read by Java for unknown reasons.
 
 ## Repo
