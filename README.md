@@ -34,6 +34,22 @@ https://java.com/en/download/
 ```java -jar simple.jar -v Path/To/Code/File
 ```
 
+## Functions
+
+The 'main' function is required to be defined for a SIMPLE program to run. This is where code interpretation begins.
+
+```
+main()
+{
+
+}
+```
+
+### Program Functions
+
+- `read()` Read user input. Returns the input.
+- `print(a, b, c...)` Prints the arguments given. Returns the number of arguments printed.
+
 ## Errors
 
 If the SIMPLE interpreter finds something it does not know how to process, an error will be shown to the user and the program will stop. There are 4 types of errors and multiple error messages that fit into these 4 categories:
