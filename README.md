@@ -16,7 +16,6 @@ As the SIMPLE language is interpreted by Java, make sure you have the latest ver
 ```
 https://java.com/en/download/
 ```
-
 The interpreter itself is a single Jar file however some test code is included as examples of possible programs. To run the interpreter, navigate to the folder in which the Jar is contained, and run the follow from a terminal/command line.
 
 ```java -jar simple.jar
@@ -33,7 +32,6 @@ https://java.com/en/download/
 
 ```java -jar simple.jar -v Path/To/Code/File
 ```
-
 ## Functions
 
 The 'main' function is required to be defined for a SIMPLE program to run. This is where code interpretation begins.
@@ -44,7 +42,6 @@ main()
 
 }
 ```
-
 ### Program Functions
 
 - `read()` Read user input. Returns the input.
@@ -56,7 +53,6 @@ If the SIMPLE interpreter finds something it does not know how to process, an er
 - `[Program Error]`    There was a general problem with the interpreter- `[Lex Error]`        There was a problem with the code Lexer- `[Parse Error]`      There was a problem with the code Parser- `[Runtime Error]`    There was a problem when running code
 
 ### Program Errors
-
 ```
 Program Error! [The number of arguments is invalid! Expected: Path to SIMPLE code file]
 ```
@@ -71,7 +67,6 @@ Program Error! [You did not select a valid file! Exiting...]
 Program Error! [An argument was not recognised! Expected: Path to SIMPLE code file]
 ```
 You typed an invalid argument. The only arguments that are valid are the path to the SIMPLE code file and ‘-v’.
-
 
 ```
 Program Error! [The path given was not found or was not a file: <path>]
